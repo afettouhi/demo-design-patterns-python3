@@ -24,7 +24,7 @@ class AbsBuilder(object):
         pass
 
     @abc.abstractmethod
-    def add_vegies(self):
+    def add_vegetables(self):
         pass
 
     @abc.abstractmethod
