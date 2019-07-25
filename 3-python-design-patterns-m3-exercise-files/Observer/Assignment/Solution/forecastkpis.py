@@ -1,5 +1,6 @@
 from observer import AbsObserver
 
+
 class ForecastKPIs(AbsObserver):
     open_tickets = -1
     closed_tickets = -1
@@ -20,4 +21,4 @@ class ForecastKPIs(AbsObserver):
         print('*****\n')
         
     def __exit__(self, exc_type, exc_value, traceback):
-        self._kpis.detach(self)        
+        self._kpis.detach(self)

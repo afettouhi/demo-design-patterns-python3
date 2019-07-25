@@ -1,5 +1,6 @@
 from observer import AbsSubject
 
+
 class KPIs(AbsSubject):
     _open_tickets = -1
     _closed_tickets = -1
@@ -23,4 +24,4 @@ class KPIs(AbsSubject):
         self._new_tickets = new_tickets
         self.notify(
             (self.open_tickets, self.closed_tickets, self.new_tickets)
-        )                
+        )

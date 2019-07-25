@@ -1,5 +1,6 @@
 import abc
 
+
 class AbsObserver(object):
     __metaclass__ = abc.ABCMeta
     
@@ -12,4 +13,4 @@ class AbsObserver(object):
 
     @abc.abstractmethod    
     def __exit__(self, exc_type, exc_value, traceback):
-        pass        
+        pass

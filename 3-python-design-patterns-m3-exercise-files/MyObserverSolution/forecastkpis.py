@@ -1,7 +1,7 @@
 from observer import AbsObserver
 
 
-class CurrentKPIs(AbsObserver):
+class ForecastKPIs(AbsObserver):
     open_tickets = -1
     closed_tickets = -1
     new_tickets = -1
@@ -15,10 +15,10 @@ class CurrentKPIs(AbsObserver):
         self.display()
         
     def display(self):
-        print('Current open tickets: {}'.format(self.open_tickets))
-        print('New tickets in last hour: {}'.format(self.closed_tickets))
-        print('Tickets closed in last hour: {}'.format(self.new_tickets))          
+        print('Forecast open tickets: {}'.format(self.open_tickets))
+        print('New tickets expected in next hour: {}'.format(self.closed_tickets))
+        print('Tickets expected to be closed in next hour: {}'.format(self.new_tickets))          
         print('*****\n')
-        
+
     def __exit__(self, exc_type, exc_value, traceback):
         self._kpis.detach(self)

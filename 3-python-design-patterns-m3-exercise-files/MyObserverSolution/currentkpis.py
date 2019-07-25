@@ -9,7 +9,8 @@ class CurrentKPIs(AbsObserver):
     def __init__(self, kpis):
         self._kpis = kpis
         kpis.attach(self)
-        
+
+    # Adding push support from notify method in observer
     def update(self, values):
         self.open_tickets, self.closed_tickets, self.new_tickets = values
         self.display()
@@ -19,6 +20,6 @@ class CurrentKPIs(AbsObserver):
         print('New tickets in last hour: {}'.format(self.closed_tickets))
         print('Tickets closed in last hour: {}'.format(self.new_tickets))          
         print('*****\n')
-        
+      
     def __exit__(self, exc_type, exc_value, traceback):
         self._kpis.detach(self)

@@ -19,4 +19,4 @@ class ShippingCost(object):
         return 4.00
    
     def _postal_cost(self, order):
-        return 5.00   
+        return 5.00

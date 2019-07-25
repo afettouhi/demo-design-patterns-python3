@@ -8,4 +8,3 @@ for kpi in KPI_Data:
         print('New tickets in last hour: %s' % kpi.value)
     elif kpi.name == 'closed':
         print('Tickets closed in last hour: %s' % kpi.value)      
-        

@@ -4,4 +4,3 @@ class ShippingCost(object):
 
     def shipping_cost(self, order):
         return self._strategy(order)
-        

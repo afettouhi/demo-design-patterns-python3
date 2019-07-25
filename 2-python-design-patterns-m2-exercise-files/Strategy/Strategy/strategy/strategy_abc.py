@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
+
 class AbsStrategy(object):
     __metaclass__ = ABCMeta
     

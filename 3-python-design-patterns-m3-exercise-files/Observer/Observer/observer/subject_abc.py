@@ -1,6 +1,7 @@
 import abc
 from observer import AbsObserver
 
+
 class AbsSubject(object):
     __metaclass__ = abc.ABCMeta
     _observers = set()

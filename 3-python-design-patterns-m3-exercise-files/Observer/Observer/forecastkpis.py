@@ -1,5 +1,6 @@
 from observer import AbsObserver
 
+
 class ForecastKPIs(AbsObserver):
     open_tickets = -1
     closed_tickets = -1
@@ -20,4 +21,3 @@ class ForecastKPIs(AbsObserver):
         print('New tickets expected in next hour: {}'.format(self.closed_tickets))
         print('Tickets expected to be closed in next hour: {}'.format(self.new_tickets))          
         print('*****\n')
-        

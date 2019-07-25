@@ -9,5 +9,5 @@ with KPIs() as kpis:
         kpis.set_kpis(100, 50, 30)
         kpis.set_kpis(50, 10, 20)
 
-print ('\n***Exited context managers.***\n\n')
+print('\n***Exited context managers.***\n\n')
 kpis.set_kpis(150, 110, 120)
