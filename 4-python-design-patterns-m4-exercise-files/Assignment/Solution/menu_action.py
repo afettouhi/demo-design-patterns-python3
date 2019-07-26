@@ -1,4 +1,4 @@
-from Queue import LifoQueue
+from queue import LifoQueue
 from collections import defaultdict
 
 
