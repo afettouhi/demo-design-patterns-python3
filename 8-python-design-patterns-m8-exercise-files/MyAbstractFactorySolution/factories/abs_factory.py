@@ -2,11 +2,12 @@ import abc
 
 
 class AbsFactory(metaclass=abc.ABCMeta):
-    @abc.abstractstaticmethod
+    @staticmethod
+    @abc.abstractmethod
     def create_saver():
         pass
 
-    @abc.abstractstaticmethod
+    @staticmethod
+    @abc.abstractmethod
     def create_investor():
         pass
-

@@ -1,6 +1,6 @@
-from ..abs_cust import AbsCust
+from ..abs_customers import AbsCustomers
 
 
-class Retail(AbsCust):
+class Retail(AbsCustomers):
     def report_type(self):
         print('"%s" is a retail saver.' % self.name)

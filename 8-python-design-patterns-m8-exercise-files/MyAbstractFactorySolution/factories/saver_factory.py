@@ -4,7 +4,7 @@ from customers.savers.government import Government
 from customers.savers.retail import Retail
 
 
-class Saver(AbsFactory): 
+class SaverFactory(AbsFactory):
     @staticmethod
     def create_commercial():
         return Commercial

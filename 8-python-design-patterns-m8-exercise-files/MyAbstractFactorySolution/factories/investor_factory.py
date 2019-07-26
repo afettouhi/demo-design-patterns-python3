@@ -1,10 +1,10 @@
 from .abs_factory import AbsFactory
-from customers.savers.commercial import Commercial
-from customers.savers.government import Government
-from customers.savers.retail import Retail
+from customers.investors.commercial import Commercial
+from customers.investors.government import Government
+from customers.investors.retail import Retail
 
 
-class Saver(AbsFactory): 
+class InvestorFactory(AbsFactory):
     @staticmethod
     def create_commercial():
         return Commercial
