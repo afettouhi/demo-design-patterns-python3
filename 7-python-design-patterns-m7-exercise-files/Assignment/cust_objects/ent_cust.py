@@ -1,5 +1,6 @@
 from .abs_cust import AbsCust
 
+
 class SMBCust(AbsCust):
     @property
     def name(self):

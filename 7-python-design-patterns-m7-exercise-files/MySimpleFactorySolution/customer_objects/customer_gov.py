@@ -1,7 +1,8 @@
-from .abs_cust import AbsCust
+from .abs_customer import AbsCustomer
 
 
-class SMBCust(AbsCust):
+class CustomerGov(AbsCustomer):
+
     @property
     def name(self):
         return self._name
@@ -11,4 +12,4 @@ class SMBCust(AbsCust):
         self._name = name
 
     def send_invoice(self):
-        print('Sending invoice to government customer "%s".' % self._name)
+        print('Sending invoice to GOV customer "%s".' % self._name)

@@ -1,7 +1,7 @@
 import abc
 
 
-class AbsCust(metaclass=abc.ABCMeta):
+class AbsCustomer(metaclass=abc.ABCMeta):
 
     @property
     @abc.abstractmethod

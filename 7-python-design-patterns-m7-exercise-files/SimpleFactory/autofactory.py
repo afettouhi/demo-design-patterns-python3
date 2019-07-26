@@ -20,4 +20,3 @@ class AutoFactory(object):
             return self.autos[carname]()
         else:
             return autos.NullCar(carname)
-    
